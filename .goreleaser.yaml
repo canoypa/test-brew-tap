@@ -22,5 +22,6 @@ brews:
   - tap:
       owner: canoypa
       name: homebrew-test-tap
+      token: "{{ .Env.RELEASE_TOKEN }}"
     folder: Formula
     homepage: 'https://github.com/canoypa/test-brew-tap'
