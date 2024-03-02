@@ -20,6 +20,10 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: stable
+      - name: Install gocredits
+        run: go install github.com/Songmu/gocredits/cmd/gocredits@latest
+      - name: Make credits
+        run: gocredits . > CREDITS
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v5
         with:
