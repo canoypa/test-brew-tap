@@ -19,7 +19,7 @@ archives:
         format: zip
 
 brews:
-  - tap:
+  - repository:
       owner: canoypa
       name: homebrew-test-tap
       token: "{{ .Env.RELEASE_TOKEN }}"
